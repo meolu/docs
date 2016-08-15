@@ -49,7 +49,7 @@ pip install ansible # will also install  paramiko PyYAML jinja2
 
 - 安装php 5.6相关组件
 
-    ```yum install php56w.x86_64 php56w-cli.x86_64 php56w-common.x86_64 php56w-gd.x86_64 php56w-ldap.x86_64 php56w-mbstring.x86_64 php56w-mcrypt.x86_64 php56w-mysql.x86_64 php56w-pdo.x86_64```
+    ```yum install php56w.x86_64 php56w-cli.x86_64 php56w-common.x86_64 php56w-gd.x86_64 php56w-ldap.x86_64 php56w-mbstring.x86_64 php56w-mcrypt.x86_64 php56w-mysql.x86_64 php56w-pdo.x86_64 php-theseer-fDOMDocument.noarch php-phpunit-exporter.noarch```
 
 - 安装php-fpm 5.6
 
