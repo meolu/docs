@@ -10,6 +10,7 @@ vi config/web.php # 设置mysql连接
 composer install  # 如果缺少bower-asset的话， 先安装：composer global require "fxp/composer-asset-plugin:*"
 ./yii walle/setup   # 初始化项目
 配置nginx/apache的webroot指向walle-web/web
+最后，通过 localhost 或 example.com 访问你的 walle 项目。初始化管理员账号密码为：admin/admin，初始化开发者账号密码为：demo/demo
 ```
 
 2.最最最详细安装指南
@@ -97,7 +98,7 @@ server {
 
 7.恭喜：）
 --------
-访问地址：localhost
+访问地址：localhost。初始化管理员账号密码为：admin/admin，初始化开发者账号密码为：demo/demo
 
 当然，可能你配置nginx时的server_name是walle.company.com时，配置本地hosts之后，直接访问：walle.company.com亦可。
 
