@@ -94,7 +94,7 @@ server {
 
 7.Congratulations：）
 --------
-visit：localhost
+visit：localhost. You can use default account login walle, one is admin/admin, the other one is demo/demo.
 
 of course, it would be nginx's server_name, such as walle.huamanshu.com, just visit walle.huamanshu.com.
 
