@@ -4,7 +4,7 @@ title: 安装
 1.简洁安装指南
 ============
 ```
-git clone git@github.com:meolu/walle-web.git
+git clone https://github.com/meolu/walle-web.git
 cd walle-web
 vi config/web.php # 设置mysql连接
 composer install  # 如果缺少bower-asset的话， 先安装：composer global require "fxp/composer-asset-plugin:*"
@@ -24,7 +24,7 @@ composer install  # 如果缺少bower-asset的话， 先安装：composer global
 ----------
 ```
 mkdir -p /data/www/walle-web && cd /data/www/walle-web  # 新建目录
-git clone git@github.com:meolu/walle-web.git .          # 代码检出
+git clone https://github.com/meolu/walle-web.git .          # 代码检出
 ```
 
 
