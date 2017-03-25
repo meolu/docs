@@ -15,7 +15,7 @@ Requirements
 ------------
 ```
 mkdir -p /data/www/walle-web && cd /data/www/walle-web  # A place to store
-git clone git@github.com:meolu/walle-web.git .          # clone is easy for update
+git clone https://github.com/meolu/walle-web.git .          # clone is easy for update
 ```
 
 
