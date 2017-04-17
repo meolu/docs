@@ -17,6 +17,10 @@ title: 检测错误
         su {user} && cat ~/.ssh/id_rsa.pub
         打开 github/gitlab/bitbucket 网站, 添加 ssh-key 到ssh-keys列表
         ```
+        添加 ssh-key 到到项目的ssh-keys列表，根本不能解决该问题，在配置项目，做项目配置检测时，始终提示
+        “宿主机代码检出检测出错，请确认把php进程用户www_php的ssh-key加入git的deploy-keys列表。”
+        到底是什么原因？能不能有人分析下，网上一堆人乱七八糟的说了很多，估计那些人连是哪里出错导致了这问题都不知道。
+        公钥生成是切换到{user}用户下操作的：su - {user} && ssh-keygen -t rsa -C '{user@host}' -b 4096，不加口令
 
 - 目标机器部署出错，请确认php进程{local_user}用户ssh-key加入目标机器的{remote_user}用户ssh-key信任列表，且{remote_user}有目标机器发布版本库{path}写入权限。详细错误：{error}
     - 问题：**请确认php进程{local_user}用户ssh-key加入目标机器的{remote_user}用户ssh-key信任列表**
