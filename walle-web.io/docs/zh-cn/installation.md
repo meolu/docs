@@ -6,7 +6,7 @@ title: 安装
 ```
 git clone git@github.com:meolu/walle-web.git
 cd walle-web
-vi config/web.php # 设置mysql连接
+vi config/local.php # 设置mysql连接
 composer install  # 如果缺少bower-asset的话， 先安装：composer global require "fxp/composer-asset-plugin:*"
 ./yii walle/setup   # 初始化项目
 配置nginx/apache的webroot指向walle-web/web
