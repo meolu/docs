@@ -170,7 +170,7 @@ cat /etc/passwd | grep www # 查看是否为 /sbin/nolgin
 
 解决办法：
 ```
-vipw /etc/passwd
+vim /etc/passwd
 修改/sbin/nolgin为/bin/bash
 ```
 
