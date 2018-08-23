@@ -26,3 +26,22 @@ PrivateTmp=false
 systemctl daemon-reload
 systemctl reload php-fpm
 ```
+
+4.上线部署卡在`同步至服务器`,F12调试start_deploy为502
+-------------------------------
+调整超时配置大一点
+* 注意检查php-fpm.conf的配置
+```
+request_terminate_timeout = 7200
+```
+* 注意检查php.ini的配置
+```
+max_execution_time = 0
+```
+* 注意检查nginx.conf的配置
+```
+fastcgi_connect_timeout 300;     // 时间改为  600
+fastcgi_send_timeout 300;        // 时间改为  600
+fastcgi_read_timeout 300;        // 时间改为  600
+```
+
