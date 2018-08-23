@@ -1,7 +1,7 @@
 title: 依赖
 ---
 
-* Bash(git、ssh)
+* Bash(git、ssh、svn)
     * 意味着不支持win、mac的zsh
 * LNMP/LAMP(php5.4+)
     * php需要开启pdo_mysql，exec函数执行
