@@ -1,4 +1,4 @@
-title: Java Tomcat Demo配置
+title: PHP Tomcat Demo配置
 ---
 
 简单写了个 PHP Demo 配置，小demo仅仅是用来测试的，各家还得根据自己公司的调调来配置。
