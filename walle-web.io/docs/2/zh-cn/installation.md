@@ -72,7 +72,7 @@ vi /etc/hosts
 ## 5.Install
 安装**Python 2.7** + `pip`。
 ```
-sh admin.sh init
+bash admin.sh init
 
 # 注意：安装mysqlclient失败，需要先安装libmysqlclient-dev(ubuntu)
 # 注意：安装失败请指定python路径. mac 可能会有用anaconda的python，找到自己系统的python 2.7追加参数指定 -p /usr/bin/python2.7 即可
@@ -95,13 +95,13 @@ mysql  -hxx -uxx -p -e'CREATE SCHEMA walle'
 ```
 7.2 Data Migration
 ```
-sh admin.sh migration
+bash admin.sh migration
 ```
 
 ## 8.Start
 8.1 启动
 ```
-sh admin.sh start
+bash admin.sh start
 ```
 8.2 重启、升级、Migration
 ```
