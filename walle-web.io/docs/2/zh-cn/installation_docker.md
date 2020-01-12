@@ -174,5 +174,6 @@ docker-compose down
 ```
 
 ## Error
-如果遇见一下错误，请docker-compose down之后再docker-compose up一次就可以了，这是mysql没有初始化完，就启动了python-server
+* 如果遇见一下错误，请docker-compose down之后再docker-compose up一次就可以了，这是mysql没有初始化完，就启动了python-server
 ![permission](/docs/2/zh-cn/static/docker-error.png)
+* 如果遇见walle-python容器链接访问 mysql 失败，请尝试在docker-compose yaml 文件中制定 mysql 版本 (亲测 mysql:5.7 镜像启动成功)
