@@ -18,6 +18,13 @@ sudo yum install docker-ce -y
 sudo systemctl enable docker
 sudo systemctl start docker
 ```
+在安装过程中，也许会遇到Requires: containerd.io >= 1.2.2-3 的异常；
+可以打开[Centos下载包](http://mirror.centos.org/centos/7/extras/x86_64/Packages/)中的最新containerd.io包的地址,
+然后运行：
+```
+ sudo yum install -y http://mirror.centos.org/centos/7/extras/x86_64/Packages/containerd.io-1.2.10-3.2.el7.x86_64.rpm
+```
+
 在安装过程中，也许会遇到Requires: container-selinux >= 2.9 的异常；
 可以打开[Centos下载包](http://mirror.centos.org/centos/7/extras/x86_64/Packages/)中的最新container-selinux包的地址,
 然后运行：
