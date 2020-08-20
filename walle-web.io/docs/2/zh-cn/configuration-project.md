@@ -52,6 +52,7 @@ walle-web.jar
 | `${CURRENT_RELEASE}` | 目标集群部署仓库                   | /data/releases/walle-tiny-demo |
 | `${VERSION}`         | 当前要发布目标集群部署仓库里的版本 | 29_78_20190225_190422          |
 | `${BRANCH}`          | 当前部署分支                       | master                         |
+| `${TAG}`             | 当前部署的tag                      | v1.0.12                        |
 | `${COMMIT_ID}`       | 当前部署的commit_id                | abcde12                        |
 | `${PROJECT_NAME}`    | 当前部署的项目名称                 | 大数据平台                     |
 | `${PROJECT_ID}`      | 当前部署的项目id                   | 12                             |
@@ -59,6 +60,8 @@ walle-web.jar
 | `${TASK_ID}`         | 当前部署的任务id                   | 11                             |
 | `${DEPLOY_USER}`     | 当前部署的用户                     | 吴水永                         |
 | `${DEPLOY_TIME}`     | 当前部署的时间                     | 2019-01-01 10:09:03            |
+
+**注意：当项目配置中选择branch时，变量`${TAG}`不可用；当选择tag时，变量`${BRANCH}`和`${COMMIT_ID}`不可用**
 
 # 高级任务
 ## 高级任务-Deploy前置任务
