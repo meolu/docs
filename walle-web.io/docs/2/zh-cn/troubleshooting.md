@@ -13,6 +13,7 @@ Authentication failed.
 原因分析：宿主机未与172.1.2.3建立`ssh`信任。好了，来了新的问题，什么是宿主机？答：walle所在的机器
 
 解决方法：把walle与所有目标服务器建立免密码登录
+0.先生产密钥对
 1、命令行（适合机器数量少的），当然也可以用expect脚本批量
 ```
 [walle]$ ssh-copy-id -i ~/.ssh/id_rsa.pub work@172.1.2.3
